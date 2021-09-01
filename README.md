@@ -5,7 +5,7 @@
 
 ## About
 
-ElonGate seeks to be the world's premier source of quotations from billionaire rocket scientist Elon Musk. A robust API and website.
+ElonGate leads the world as the premier source of quotations from billionaire rocket scientist and business magnate Elon Musk. A robust API and website offer hundreds of the most quotable phrases from the Doge Father. 
 
 ## Learning
 
