@@ -9,6 +9,7 @@ class Quote extends Model
 {
     use HasFactory;
 
-    
+    protected $table = 'quotes';
+    protected $primaryKey =  'id';
 
 }

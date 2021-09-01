@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\QuoteController;
+use App\Http\Controllers\QuotesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,4 @@ use App\Http\Controllers\QuoteController;
 |
 */
 
-Route::get('/', [QuotesController::class, 'index']);
+Route::resource('/', QuotesController::class);

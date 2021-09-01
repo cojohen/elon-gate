@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Quote;
 
 class QuotesController extends Controller
 {
@@ -14,11 +15,12 @@ class QuotesController extends Controller
      */
     public function index() {
 
-        $quote = DB::table('quotes')
-            ->inRandomOrder()
-            ->first();
+        // Get random quote from model
+        $quote = Quote::inRandomOrder()
+            ->first()
+            ->body;
 
-        return view('home', ['quote' => $quote->body]);
+        return view('home', ['quote' => $quote]);
     }
 
     /**
