@@ -10,4 +10,5 @@ class Quote extends Model
     use HasFactory;
 
     
+
 }

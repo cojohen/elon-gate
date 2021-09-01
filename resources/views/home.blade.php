@@ -36,7 +36,7 @@
 
     </header>
     <main>
-        <div class="quoteTile">
+        <div class="quoteTile" onclick="location.reload();">
             <img 
                 src="{{ asset('images/android-chrome-192x192.png') }}"
                 alt="Elon Musk's Face"
