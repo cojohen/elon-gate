@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "elon-gate/elon-gate",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Elon Musk quote API",
+    "keywords": ["elon", "musk"],
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
