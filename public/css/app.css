@@ -2,7 +2,6 @@ body {
   text-align: center;
 }
 body main {
-  border: solid 15px salmon;
   border-radius: 5px;
   padding: 5em;
   max-width: 900px;
@@ -13,7 +12,19 @@ body main .quoteTile {
   border-radius: 5px;
   padding: 2em 4em;
 }
+body main .quoteTile img {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+}
 body main .quoteTile p {
   font-size: 36px;
   line-height: 46px;
+}
+body main .quoteTile sub {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  padding: 0;
 }

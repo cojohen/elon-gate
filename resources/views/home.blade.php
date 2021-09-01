@@ -37,11 +37,17 @@
     </header>
     <main>
         <div class="quoteTile">
+            <img 
+                src="{{ asset('images/android-chrome-192x192.png') }}"
+                alt="Elon Musk's Face"
+            />
             <p>
                 {{ $quote }}
             </p>
             
-            <sub>-Elon Musk</sub>
+            <sub>
+                -Elon Musk
+            </sub>
         </div>
     </main>
 </body>
