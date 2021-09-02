@@ -1,20 +1,20 @@
 @extends('layouts.app')
 
-@section('title', 'Create a Quote | ElonGate')
+@section('title', 'Edit a Quote | ElonGate')
 
 @section('content')
     <div class="section">
         <h1>Create a new quote</h1>
-        <form action="{{ url('quotes/create') }}" method="POST">
+        <form action="{{ url("quotes/$quote->id") }}" method="POST">
             @csrf
-
+            @method('PUT')
             <div class="block">
                 <input
                     type="text"
                     name="body"
-                    placeholder="Quote..."
                     size="50"
-                    onkeyup="document.getElementById('quoteText').innerHTML=this.value">
+                    onkeyup="document.getElementById('quoteText').innerHTML=this.value"
+                    value="{{ $quote->body }}">
                 <input
                     type="submit"
                     name="submit"
@@ -29,7 +29,7 @@
             alt="Elon Musk's Face"
         />
         <p id="quoteText">
-            Your text here
+            {{ $quote->body }}
         </p>
         
         <sub>

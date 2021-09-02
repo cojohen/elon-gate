@@ -54,15 +54,11 @@ class QuotesController extends Controller
      */
     public function store(Request $request)
     {
-        /*
-        $quote = new Quote;
-        $quote->body = $request->input('body');
-        $quote->save();
-        */
-
-        $quote = Quote::create([
+        $quote = Quote::create(
+            [
             'body' => $request->input('body')
-        ]);
+            ]
+        );
 
         return redirect('/quotes');
     }
@@ -75,7 +71,9 @@ class QuotesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $quote = Quote::find($id)->first();
+
+        return view('quotes.edit')->with('quote', $quote);
     }
 
     /**
@@ -87,7 +85,14 @@ class QuotesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $quote = Quote::where('id', $id)
+            ->update(
+                [
+                'body' => $request->input('body')
+                ]
+            );
+
+        return redirect('/quotes');
     }
 
     /**

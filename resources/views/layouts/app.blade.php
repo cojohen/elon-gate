@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', 'Elon Gate: The world\'s premier Elon Musk quote library')</title>
+    <title>@yield('title', 'ElonGate: The world\'s premier Elon Musk quote library')</title>
     <link 
         rel="stylesheet"
         href="{{ asset('css/app.css') }}"
