@@ -17,3 +17,4 @@ use App\Http\Controllers\QuotesController;
 Route::get('/', [QuotesController::class, 'random']);
 
 Route::resource('/quotes', QuotesController::class);
+Route::post('/quotes/create', [QuotesController::class, 'store']);

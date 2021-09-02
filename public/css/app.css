@@ -20,7 +20,7 @@ body main .quoteTile img {
   display: inline-block;
   margin: 0;
 }
-body main .quoteTile p {
+body main .quoteTile p, body main .quoteTile input[type=text] {
   font-size: 36px;
   line-height: 46px;
   margin: 1em;
@@ -46,6 +46,12 @@ body main .quoteTile .controls a {
 body main .quoteTile .controls b {
   display: none;
 }
-body main form {
-  margin-bottom: 6em;
+body main .section {
+  margin: 2em auto 4em;
+}
+body main img.elonHead {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+  margin: 0 auto 1em;
 }

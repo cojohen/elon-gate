@@ -24,7 +24,7 @@ body {
                 margin: 0;
             }
 
-            p {
+            p, input[type=text] {
                 font-size: 36px;
                 line-height: 46px;
                 margin: 1em;
@@ -56,8 +56,15 @@ body {
             }
         }
 
-        form {
-            margin-bottom: 6em;
+        .section {
+            margin: 2em auto 4em; 
+        }
+
+        img.elonHead {
+            height: 40px;
+            width: auto;
+            display: inline-block;
+            margin: 0 auto 1em;
         }
     }
 }

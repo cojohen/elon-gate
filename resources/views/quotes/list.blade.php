@@ -36,23 +36,29 @@
 
     </header>
     <main>
+        <!-- Elon image -->
+        <img 
+        src="{{ asset('images/android-chrome-192x192.png') }}"
+        alt="Elon Musk's Face"
+        class="elonHead"
+        />
+
+        <!-- Quote list -->
         @foreach($quotes as $quote)
             <div class="quoteTile" onclick="location.reload();">
                 <p>
                     {{ $quote->body }}
                 </p>
-                
                 <sub>
                     -Elon Musk
                 </sub>
                 <div class="controls">
-                    <a href="#">
+                    <a href="{{ url('quotes/delete/' . $quote->id) }}">
                         Delete
                     </a>
-                    <a href="#">
+                    <a href="{{ url('quotes/edit/' . $quote->id) }}">
                         Edit
                     </a>
-                    <b>ID:&nbsp;{{ $quote->id }}</b>
                 </div>
             </div>
         @endforeach

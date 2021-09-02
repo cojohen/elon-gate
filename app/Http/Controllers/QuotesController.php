@@ -54,7 +54,17 @@ class QuotesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        /*
+        $quote = new Quote;
+        $quote->body = $request->input('body');
+        $quote->save();
+        */
+
+        $quote = Quote::create([
+            'body' => $request->input('body')
+        ]);
+
+        return redirect('/quotes');
     }
 
     /**
