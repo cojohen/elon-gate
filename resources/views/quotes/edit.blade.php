@@ -22,7 +22,19 @@
             </div>
         </form>
     </div>
-    <!-- quote view -->
+    
+    <!-- Go back link -->
+    <div 
+        class="statsRow"
+        style="text-align: left;">
+        <a 
+            href="{{ url('/quotes') }}"
+            alt="Go Back">
+            &larr; Back
+        </a>
+    </div>
+
+    <!-- Quote preview tile -->
     <div class="section quoteTile" id="quoteTile">
         <img 
             src="{{ asset('images/android-chrome-192x192.png') }}"

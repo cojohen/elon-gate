@@ -32,19 +32,45 @@ body main .quoteTile sub {
   padding: 0;
 }
 body main .quoteTile .controls {
-  margin-bottom: -30px;
+  margin-top: -20px;
   margin-right: -60px;
-  text-align: right;
+  text-align: left;
 }
-body main .quoteTile .controls a {
+body main .quoteTile .controls a, body main .quoteTile .controls button {
   text-decoration: none;
-  margin-right: 10px;
-  color: salmon;
+  margin: 0 10px 0 0;
+  color: #FFB703;
   font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: left;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  background: transparent;
+  border: none;
+  padding: 5px;
 }
 body main .quoteTile .controls b {
   display: none;
+}
+body main .statsRow {
+  text-align: right;
+}
+body main .statsRow p {
+  padding: 0;
+  margin: 0 8px 0 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+body main .statsRow a {
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  color: #023047;
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: left;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  background: transparent;
+  border: none;
+  padding: 5px;
 }
 body main .section {
   margin: 2em auto 4em;

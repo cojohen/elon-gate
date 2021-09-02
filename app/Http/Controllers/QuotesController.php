@@ -15,7 +15,8 @@ class QuotesController extends Controller
      */
     public function index() {
 
-        $quotes = Quote::all();
+        $quotes = Quote::all()
+            ->sortDesc();
 
         return view('quotes.list', ['quotes' => $quotes]);
     }
@@ -42,7 +43,6 @@ class QuotesController extends Controller
      */
     public function create()
     {
-        //
         return view('quotes.create');
     }
 
@@ -71,7 +71,9 @@ class QuotesController extends Controller
      */
     public function edit($id)
     {
-        $quote = Quote::find($id)->first();
+        $quote = Quote::find($id);
+
+        //dd($quote);
 
         return view('quotes.edit')->with('quote', $quote);
     }
@@ -103,6 +105,10 @@ class QuotesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $quote = Quote::find($id);
+
+        $quote->delete();
+    
+        return redirect('/quotes');
     }
 }

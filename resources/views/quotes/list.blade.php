@@ -10,7 +10,23 @@
     class="elonHead"
     />
 
-    <!-- Quote list -->
+    <!-- Create new quote -->
+    <div class="statsRow">
+        <a 
+            href="{{ url('/quotes/create') }}"
+            alt="Create new">
+            New &rarr;
+        </a>
+    </div>
+    
+    <!-- Display list count -->
+    <div class="statsRow">
+        <p>
+            1 - {{ count($quotes) }} of {{ count($quotes) }}
+        </p>
+    </div>
+
+    <!-- Display list of quotes as tiles -->
     @foreach($quotes as $quote)
         <div class="quoteTile" onclick="location.reload();">
             <p>
@@ -19,13 +35,25 @@
             <sub>
                 -Elon Musk
             </sub>
-            <div class="controls">
-                <a href="{{ url("quotes/$quote->id/delete") }}">
-                    Delete
+            <div 
+                class="controls"
+                style="float:right; ">
+                <a 
+                    href="{{ url("quotes/$quote->id/edit") }}"
+                    style="color: green;">
+                    Edit &rarr;
                 </a>
-                <a href="{{ url("quotes/$quote->id/edit") }}">
-                    Edit
-                </a>
+                <form 
+                    action="{{ url("quotes/$quote->id") }}"
+                    method="POST">
+                    @csrf
+                    @method('delete')
+                    <button
+                        type="submit" 
+                        style="color:red;">
+                        Delete &rarr;
+                    </button>
+                </form>
             </div>
         </div>
     @endforeach
