@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background: #CDE8F4;
 }
 body main {
   border-radius: 5px;
@@ -13,6 +14,7 @@ body main .quoteTile {
   padding: 2em 4em;
   margin-bottom: 1em;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background: white;
 }
 body main .quoteTile img {
   height: 40px;
@@ -39,7 +41,7 @@ body main .quoteTile .controls {
 body main .quoteTile .controls a, body main .quoteTile .controls button {
   text-decoration: none;
   margin: 0 10px 0 0;
-  color: #FFB703;
+  color: #CDE8F4;
   font-family: Helvetica, sans-serif;
   font-size: 17px;
   text-align: left;

@@ -59,8 +59,12 @@ class QuotesController extends Controller
             'body' => $request->input('body')
             ]
         );
-
-        return redirect('/quotes');
+        
+        if ($request->input('makeAnother') === 'on') {
+            return redirect('/quotes/create');
+        } else {
+            return redirect('/quotes');
+        }
     }
 
     /**

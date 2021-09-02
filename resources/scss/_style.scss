@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background: $secondary-color;
     
     main {
         border-radius: 5px;
@@ -13,6 +14,7 @@ body {
             padding: 2em 4em;
             margin-bottom: 1em;
             box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            background: white;
 
             img {
                 height: 40px;

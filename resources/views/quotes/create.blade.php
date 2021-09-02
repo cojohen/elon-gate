@@ -18,10 +18,15 @@
                     type="submit"
                     name="submit"
                     value="Store">
-                <input
-                    type="checkbox"
-                    name="makeAnother"
-                    checked>
+                <br>
+                <label for="makeAnother">
+                    <input
+                        type="checkbox"
+                        name="makeAnother"
+                        checked>
+                    then make another
+                </label>
+
             </div>
         </form>
     </div>
