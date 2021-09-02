@@ -14,4 +14,6 @@ use App\Http\Controllers\QuotesController;
 |
 */
 
-Route::resource('/', QuotesController::class);
+Route::get('/', [QuotesController::class, 'random']);
+
+Route::resource('/quotes', QuotesController::class);

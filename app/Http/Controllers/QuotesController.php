@@ -15,12 +15,24 @@ class QuotesController extends Controller
      */
     public function index() {
 
+        $quotes = Quote::all();
+
+        return view('quotes.list', ['quotes' => $quotes]);
+    }
+
+    /**
+     * Display a random single record.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function random() {
+
         // Get random quote from model
         $quote = Quote::inRandomOrder()
             ->first()
             ->body;
-
-        return view('home', ['quote' => $quote]);
+        
+        return view('quotes.home', ['quote' => $quote]);
     }
 
     /**
@@ -31,6 +43,7 @@ class QuotesController extends Controller
     public function create()
     {
         //
+        return view('quotes.create');
     }
 
     /**
@@ -40,17 +53,6 @@ class QuotesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
     {
         //
     }

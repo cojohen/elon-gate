@@ -11,6 +11,8 @@ body main .quoteTile {
   border: solid 1px #444;
   border-radius: 5px;
   padding: 2em 4em;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 body main .quoteTile img {
   height: 40px;
@@ -21,10 +23,29 @@ body main .quoteTile img {
 body main .quoteTile p {
   font-size: 36px;
   line-height: 46px;
+  margin: 1em;
 }
 body main .quoteTile sub {
   font-size: 20px;
   line-height: 40px;
   display: block;
   padding: 0;
+}
+body main .quoteTile .controls {
+  margin-bottom: -30px;
+  margin-right: -60px;
+  text-align: right;
+}
+body main .quoteTile .controls a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: salmon;
+  font-family: Helvetica, sans-serif;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+body main .quoteTile .controls b {
+  display: none;
+}
+body main form {
+  margin-bottom: 6em;
 }

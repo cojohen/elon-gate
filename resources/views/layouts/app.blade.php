@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elon Gate: The world's premier Elon Musk quote library </title>
+    <title>@yield('title', 'Elon Gate: The world\'s premier Elon Musk quote library')</title>
     <link 
         rel="stylesheet"
         href="{{ asset('css/app.css') }}"
@@ -36,19 +38,7 @@
 
     </header>
     <main>
-        <div class="quoteTile" onclick="location.reload();">
-            <img 
-                src="{{ asset('images/android-chrome-192x192.png') }}"
-                alt="Elon Musk's Face"
-            />
-            <p>
-                {{ $quote }}
-            </p>
-            
-            <sub>
-                -Elon Musk
-            </sub>
-        </div>
+        @yield('content')
     </main>
 </body>
 </html>
